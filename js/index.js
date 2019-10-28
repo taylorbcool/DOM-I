@@ -40,3 +40,21 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Nav Styles
+document.querySelector('nav :first-child').textContent = siteContent.nav["nav-item-1"];
+document.querySelector('nav :nth-child(2)').textContent = siteContent.nav["nav-item-2"];
+document.querySelector('nav :nth-child(3)').textContent = siteContent.nav["nav-item-3"];
+document.querySelector('nav :nth-child(4)').textContent = siteContent.nav["nav-item-4"];
+document.querySelector('nav :nth-child(5)').textContent = siteContent.nav["nav-item-5"];
+document.querySelector('nav :last-child').textContent = siteContent.nav["nav-item-6"];
+
+// CTA Styles
+document.querySelector('.cta-text :first-child').textContent = siteContent.cta["h1"];
+document.querySelector('.cta-text :last-child').textContent = siteContent.cta["button"];
+document.querySelector('#cta-img').setAttribute('src', siteContent.cta['img-src']);
+
+// Main-Content Styles
+document.querySelector('.text-content > h4').textContent = siteContent.main-content['features-h4'];
+
+document.querySelector('#middle-img').setAttribute('src', siteContent.main-content['middle-img-src']);
