@@ -49,6 +49,19 @@ document.querySelector('nav :nth-child(4)').textContent = siteContent['nav']["na
 document.querySelector('nav :nth-child(5)').textContent = siteContent['nav']["nav-item-5"];
 document.querySelector('nav :last-child').textContent = siteContent['nav']["nav-item-6"];
 
+let appointments = document.createElement('a');
+appointments.textContent = 'Appointments';
+document.querySelector('nav').appendChild(appointments);
+
+let uselessButton = document.createElement('a');
+uselessButton.textContent = 'Useless Button';
+document.querySelector('nav').prepend(uselessButton);
+
+let navbar = document.querySelectorAll('a');
+navbar.forEach(element => {
+  element.style.color = "#00ff00";
+});
+
 // CTA Styles
 document.querySelector('.cta-text :first-child').textContent = siteContent['cta']["h1"];
 document.querySelector('.cta-text :last-child').textContent = siteContent['cta']["button"];
